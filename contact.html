@@ -4,32 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Nabraj Mahatara</title>
-  <meta name="description" content="Get in touch with Nabraj Mahatara for IT infrastructure, system administration, and Linux server management inquiries.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Get in touch with Nabraj Mahatara for IT infrastructure operations.">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <div id="main-header"></div>
   
-  <main class="contact-container">
-    <h1>Contact Me</h1>
-    <p>If you're looking for someone to help manage your IT systems, servers, or need assistance with Linux environments, feel free to reach out!</p>
-    <br>
-    <form class="contact-form" action="#" method="get" onsubmit="alert('Form submitted successfully!'); return false;">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required placeholder="Your Name">
+  <div class="page-header">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h1>Let's Connect</h1>
+      <p>Open to discussions regarding system administration, server management, or Linux-based projects.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Reach Out</h2>
+        <p>Fill out the form or use the contact details below to get in touch. I usually respond within 24 hours.</p>
+        
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>hello@example.com</span>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Global / Remote</span>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+1 (555) 000-0000</span>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com">
+      
+      <div class="contact-form-container">
+        <form class="contact-form" action="#" method="get" onsubmit="alert('Message sent successfully! I will reach out soon.'); return false;">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder="What's your name?">
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder="Your email address">
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
-      </div>
-      <button type="submit">Send Message</button>
-    </form>
+    </div>
   </main>
   
   <div id="main-footer"></div>
